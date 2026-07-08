@@ -36,7 +36,7 @@ def curl_get(url: str) -> dict:
 
 
 def get_quote(symbol: str) -> StockResult:
-    data = curl_get(f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}")
+    data = curl_get(f"https://query2.finance.yahoo.com/v8/finance/chart/{symbol}")
     if not data:
         return StockResult(symbol=symbol, error="Could not fetch data")
 
