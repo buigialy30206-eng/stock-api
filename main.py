@@ -7,6 +7,8 @@ from typing import Optional
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+import os
+API_KEY = os.getenv("API_KEY", "demo")
 
 # Get free key at https://twelvedata.com/apikey
 API_KEY = "demo"  # Replace with your free key at https://twelvedata.com/apikey
