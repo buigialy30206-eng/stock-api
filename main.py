@@ -4,7 +4,7 @@ Live stock data. Alpha Vantage free tier or Yahoo fallback.
 """
 import subprocess, json as _json, time, threading
 from typing import Optional
-from fastapi import Query
+from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
